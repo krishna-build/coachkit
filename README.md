@@ -1,213 +1,154 @@
-<![CDATA[<div align="center">
+<div align="center">
+  <h1>🚀 CoachKit</h1>
+  <p><strong>Open-source marketing automation for coaches, consultants & solopreneurs</strong></p>
+  <p>Stop paying $500+/month for marketing tools. CoachKit gives you everything — for free.</p>
 
-# ⚡ CoachKit — Open-Source Marketing Automation
+  <p>
+    <a href="https://github.com/krishna-build/coachkit/stargazers"><img src="https://img.shields.io/github/stars/krishna-build/coachkit?style=social" alt="Stars"></a>
+    <a href="https://github.com/krishna-build/coachkit/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+    <a href="https://github.com/krishna-build/coachkit/issues"><img src="https://img.shields.io/github/issues/krishna-build/coachkit" alt="Issues"></a>
+    <img src="https://img.shields.io/badge/Built%20with-Claude-blueviolet" alt="Built with Claude">
+    <img src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white" alt="Supabase">
+    <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React">
+  </p>
 
-**Free marketing automation for coaches, consultants & solopreneurs**
-
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Built with Supabase](https://img.shields.io/badge/Built%20with-Supabase-3ecf8e?logo=supabase)](https://supabase.com)
-[![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-cc785c?logo=anthropic)](https://claude.ai)
-[![React](https://img.shields.io/badge/React-19-61dafb?logo=react)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?logo=typescript)](https://typescriptlang.org)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38bdf8?logo=tailwindcss)](https://tailwindcss.com)
-
-<br />
-
-> **Stop paying $200+/month for marketing tools.**
-> CoachKit gives you everything you need — email sequences, payment tracking, UTM attribution, lead management, and analytics — all self-hosted, all free.
-
-<br />
-
-[Quick Start](#-quick-start) · [Features](#-features) · [Architecture](#-architecture) · [Contributing](#-contributing) · [License](#-license)
-
+  <p>
+    <a href="#-quick-start">Quick Start</a> •
+    <a href="#-features">Features</a> •
+    <a href="#-architecture">Architecture</a> •
+    <a href="#-tech-stack">Tech Stack</a> •
+    <a href="#-contributing">Contributing</a>
+  </p>
 </div>
 
 ---
 
-## 📸 Screenshots
+## 💡 Why CoachKit?
 
-<details>
-<summary>Click to expand screenshots</summary>
+Most coaches and solopreneurs pay **$200-500/month** for tools like HubSpot, ActiveCampaign, or ConvertKit. CoachKit replaces all of them with a **single open-source toolkit** that you own and control.
 
-| Dashboard | Contacts | Attribution |
-|-----------|----------|-------------|
-| ![Dashboard](docs/screenshots/dashboard.png) | ![Contacts](docs/screenshots/contacts.png) | ![Attribution](docs/screenshots/attribution.png) |
-
-| Email Sequences | Campaign Editor | Pipeline |
-|-----------------|-----------------|----------|
-| ![Sequences](docs/screenshots/sequences.png) | ![Campaigns](docs/screenshots/campaigns.png) | ![Pipeline](docs/screenshots/pipeline.png) |
-
-</details>
+| Feature | HubSpot | ConvertKit | CoachKit |
+|---------|---------|------------|----------|
+| Email sequences | ✅ $800/mo | ✅ $66/mo | ✅ **Free** |
+| Payment tracking | ❌ | ❌ | ✅ **Free** |
+| UTM attribution | ✅ $800/mo | ❌ | ✅ **Free** |
+| Analytics dashboard | ✅ $800/mo | ✅ $66/mo | ✅ **Free** |
+| Lead management | ✅ $800/mo | ✅ $66/mo | ✅ **Free** |
+| Self-hosted | ❌ | ❌ | ✅ **Yes** |
 
 ---
 
 ## ✨ Features
 
-### 📧 Email Marketing
-- **Email Sequences** — Multi-step drip campaigns with delays, conditions, and A/B testing
-- **Campaign Editor** — Rich HTML email editor with templates and personalization tokens
-- **Email Reports** — Track opens, clicks, bounces, and unsubscribes in real-time
-- **Template Library** — Pre-built email templates you can customize
+### 📧 Email Automation
+- **Multi-step nurture sequences** — automatically enroll new leads
+- **Payment recovery emails** — recover failed payments with automated follow-ups
+- **Smart stop rules** — sequences pause when leads convert
+- **HTML template engine** — beautiful emails with personalization tokens
 
 ### 💰 Payment Tracking
-- **Razorpay Integration** — Automatic payment verification via webhooks
-- **Multi-tier Tracking** — Track entry-level payments AND high-ticket conversions
-- **Revenue Analytics** — Revenue breakdowns by campaign, source, and time period
-- **Customer Journey** — See the full path: Lead → First Payment → Upsell → High Ticket
+- **Razorpay webhook integration** — real-time payment capture
+- **Lifecycle tagging** — Lead → Paid → Call Booked → Purchased
+- **Revenue attribution** — trace every payment to its source ad
+- **Refund detection** — automatic status updates
 
-### 📊 Analytics & Attribution
-- **UTM Attribution** — Track which ads, campaigns, and creatives drive revenue
-- **Conversion Funnels** — Visual funnel analysis from lead to paid customer
-- **Cohort Analysis** — Weekly cohort breakdowns showing conversion velocity
-- **Campaign ROI** — Know exactly which campaigns generate what revenue
+### 📊 UTM Attribution Engine
+- **Server-side visitor tracking** — capture UTM parameters on page load
+- **Payment-visitor matching** — link ad clicks to payments automatically
+- **Cloudflare geolocation** — free city detection (no API key needed)
+- **Campaign analytics** — performance breakdown by campaign, creative, and audience
 
-### 👥 Lead Management
-- **Contact CRM** — Full contact management with custom fields, tags, and notes
-- **Pipeline View** — Kanban-style pipeline for tracking deal stages
-- **Smart Segments** — Dynamic segments based on behavior, tags, and payment status
-- **Bulk Actions** — Tag, export, and enroll contacts in sequences in bulk
-- **Import/Export** — CSV import with deduplication and field mapping
+### 📋 Lead Management
+- **Google Sheet sync** — bidirectional import from existing spreadsheets
+- **Smart deduplication** — match by email and phone
+- **Contact timeline** — full journey from first click to purchase
+- **Bulk operations** — tag, segment, export, and manage at scale
 
-### 🔗 Integrations
-- **Google Sheets Sync** — Two-way sync with your existing spreadsheets
-- **Razorpay Webhooks** — Real-time payment event processing
-- **WhatsApp** — Send and track WhatsApp messages (via API)
-- **Meta Ads** — View and analyze your Facebook/Instagram ad performance
-- **Resend / SMTP** — Flexible email delivery (Resend, Postmark, or any SMTP)
-
-### 🎨 UI/UX
-- **Dark & Light Mode** — Beautiful themes with smooth transitions
-- **Mobile Responsive** — Full functionality on phones and tablets
-- **Command Palette** — `⌘K` quick navigation to any page or contact
-- **Real-time Updates** — Live data via Supabase Realtime subscriptions
-- **Animated Dashboard** — Smooth animations with Framer Motion
+### 📈 Analytics Dashboard
+- **9-page dashboard** — contacts, segments, sequences, attribution, revenue
+- **Real-time metrics** — delivery rates, open rates, conversion rates
+- **Campaign comparison** — side-by-side ad performance
+- **Revenue tracking** — daily, weekly, monthly breakdowns
 
 ---
 
-## 🏗 Architecture
+## 🏗️ Architecture
 
 ```
-┌──────────────────────────────────────────────────────────┐
-│                     FRONTEND (React)                      │
-│                                                           │
-│  ┌─────────┐ ┌──────────┐ ┌───────────┐ ┌────────────┐  │
-│  │Dashboard │ │ Contacts │ │ Sequences │ │ Analytics  │  │
-│  └────┬─────┘ └────┬─────┘ └─────┬─────┘ └─────┬──────┘  │
-│       │            │             │              │          │
-│  ┌────┴────────────┴─────────────┴──────────────┴──────┐  │
-│  │              Supabase Client (JS SDK)                │  │
-│  └─────────────────────┬───────────────────────────────┘  │
-└────────────────────────┼──────────────────────────────────┘
-                         │
-                    ┌────┴─────┐
-                    │ Supabase │
-                    │   API    │
-                    └────┬─────┘
-                         │
-        ┌────────────────┼────────────────────┐
-        │                │                    │
-   ┌────┴────┐    ┌──────┴──────┐    ┌───────┴───────┐
-   │PostgreSQL│    │Edge Functions│    │  Realtime     │
-   │  (DB)   │    │             │    │  (WebSocket)  │
-   └─────────┘    │• email-engine│    └───────────────┘
-                  │• razorpay-wh │
-                  │• track-visit │
-                  │• trigger-sync│
-                  └──────────────┘
-                         │
-        ┌────────────────┼──────────────────┐
-        │                │                  │
-   ┌────┴────┐    ┌──────┴──────┐    ┌─────┴──────┐
-   │ Razorpay│    │ Resend/SMTP │    │ Google     │
-   │Webhooks │    │ (Email)     │    │ Sheets API │
-   └─────────┘    └─────────────┘    └────────────┘
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   Ad Platforms   │────▶│  Landing Page     │────▶│   Razorpay      │
+│  (Meta/Google)   │     │  (your website)   │     │  (payment)      │
+└─────────────────┘     └──────┬───────────┘     └────────┬────────┘
+                               │                          │
+                    UTM tracking script            Webhook (payment)
+                               │                          │
+                    ┌──────────▼──────────────────────────▼────────┐
+                    │              Supabase                         │
+                    │  ┌──────────┐  ┌───────────┐  ┌───────────┐ │
+                    │  │ Contacts │  │ Visitors  │  │ Sequences │ │
+                    │  └──────────┘  └───────────┘  └───────────┘ │
+                    │  ┌──────────┐  ┌───────────┐  ┌───────────┐ │
+                    │  │ Payments │  │ Campaigns │  │ Analytics │ │
+                    │  └──────────┘  └───────────┘  └───────────┘ │
+                    └──────────────────┬───────────────────────────┘
+                                       │
+                            ┌──────────▼──────────┐
+                            │  React Dashboard    │
+                            │  (9 pages)          │
+                            └─────────────────────┘
 ```
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-| Category | Technology |
-|----------|-----------|
-| **Frontend** | React 19, TypeScript, Vite |
-| **Styling** | TailwindCSS 4, Framer Motion |
-| **Backend** | Supabase (PostgreSQL + Auth + Edge Functions) |
-| **Charts** | Recharts |
-| **Icons** | Lucide React |
-| **Email** | Resend / SMTP (configurable) |
-| **Payments** | Razorpay (webhooks) |
-| **State** | TanStack React Query |
-| **Rich Text** | TipTap |
+| Layer | Technology | Why |
+|-------|-----------|-----|
+| **Frontend** | React 18 + Vite + TailwindCSS | Fast, modern, beautiful |
+| **Database** | Supabase (PostgreSQL) | Free tier, real-time, auth |
+| **Edge Functions** | Supabase Edge Functions (Deno) | Serverless webhooks |
+| **Email** | Resend API / Any SMTP | Flexible, affordable |
+| **Payments** | Razorpay | India-first, extensible to Stripe |
+| **Hosting** | Netlify / Vercel / Cloudflare Pages | Free tier available |
+| **Analytics** | Recharts + Custom tracking | No third-party dependencies |
 
 ---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-
 - Node.js 18+
-- A [Supabase](https://supabase.com) project (free tier works)
-- A [Resend](https://resend.com) API key (or any SMTP provider)
+- [Supabase](https://supabase.com) account (free tier works)
+- Email provider (Resend API key OR any SMTP)
 
-### 1. Clone & Install
+### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/coachkit.git
+# Clone the repository
+git clone https://github.com/krishna-build/coachkit.git
 cd coachkit
+
+# Install dependencies
 npm install
-```
 
-### 2. Configure Environment
-
-```bash
+# Set up environment
 cp .env.example .env
-```
+# Edit .env with your credentials
 
-Edit `.env` with your credentials:
-
-```env
-VITE_SUPABASE_URL=https://your-project.supabase.co
-VITE_SUPABASE_ANON_KEY=your-anon-key
-VITE_APP_NAME=CoachKit
-```
-
-### 3. Set Up Database
-
-Run the SQL migration in your Supabase SQL editor:
-
-```bash
-# Apply the schema
-cat supabase/migrations/001_initial_schema.sql | pbcopy
-# Paste into Supabase SQL Editor and run
-```
-
-### 4. Deploy Edge Functions
-
-```bash
-supabase functions deploy email-engine
-supabase functions deploy razorpay-webhook
-supabase functions deploy track-visitor
-supabase functions deploy trigger-sync
-```
-
-### 5. Start Development
-
-```bash
+# Start development server
 npm run dev
 ```
 
-Visit `http://localhost:5173` and sign in with your Supabase credentials.
+Visit `http://localhost:5173` — your dashboard is live! 🎉
 
-### 6. (Optional) Set Up Sync Scripts
-
-For Google Sheets sync and payment tracking:
+### Database Setup
 
 ```bash
-cd scripts
-cp .env.example .env
-# Configure your sync credentials
-npm install
-node sync-api.js  # Starts sync API on port 3848
+# Push schema to Supabase
+npx supabase db push
+
+# Or run migrations manually
+npx supabase migration up
 ```
 
 ---
@@ -217,120 +158,85 @@ node sync-api.js  # Starts sync API on port 3848
 ```
 coachkit/
 ├── src/
-│   ├── pages/           # Route pages (Dashboard, Contacts, etc.)
-│   ├── components/      # Shared UI components
-│   ├── contexts/        # React context providers
-│   ├── lib/             # Utilities and Supabase client
-│   └── types/           # TypeScript type definitions
+│   ├── components/          # Reusable UI (Layout, Modals, Charts)
+│   ├── pages/               # Dashboard pages (20+ pages)
+│   │   ├── Dashboard.tsx    # Overview & stats
+│   │   ├── Contacts.tsx     # Lead management
+│   │   ├── Sequences.tsx    # Email automation
+│   │   ├── Attribution.tsx  # UTM analytics
+│   │   ├── Analytics.tsx    # Revenue & performance
+│   │   ├── MetaAds.tsx      # Ad campaign tracking
+│   │   └── ...
+│   ├── hooks/               # Custom React hooks
+│   ├── lib/                 # Supabase client, helpers
+│   └── types/               # TypeScript definitions
 ├── supabase/
-│   ├── functions/       # Edge functions (email, webhooks, etc.)
-│   └── migrations/      # SQL schema migrations
-├── scripts/             # Sync scripts (Google Sheets, payments)
-├── docs/                # Documentation and screenshots
-└── public/              # Static assets
+│   ├── functions/           # Edge functions
+│   │   ├── razorpay-webhook/   # Payment processing
+│   │   ├── track-visitor/      # UTM tracking
+│   │   ├── email-engine/       # Email sending
+│   │   └── sync-master-sheet/  # Google Sheet sync
+│   └── migrations/          # Database schema
+├── scripts/                 # Automation (cron jobs)
+└── docs/                    # Documentation
 ```
 
 ---
 
-## 🗄 Database Schema
+## 🤝 Who Is This For?
 
-CoachKit uses the following main tables in Supabase:
-
-| Table | Purpose |
-|-------|---------|
-| `automation_contacts` | All leads and customers |
-| `automation_sequences` | Email sequence definitions |
-| `automation_sequence_steps` | Individual steps in a sequence |
-| `automation_sequence_enrollments` | Contact-sequence enrollment tracking |
-| `automation_email_log` | Email delivery and engagement tracking |
-| `automation_campaigns` | One-off email campaigns |
-| `automation_tags` | Contact tags/labels |
-| `automation_webhook_log` | Incoming webhook event log |
-| `automation_workflows` | Automation workflow definitions |
-| `profiles` | User profiles and roles |
+- 🧑‍🏫 **Coaches** running paid programs who need lead nurturing
+- 💼 **Consultants** automating their sales pipeline
+- 🚀 **Solopreneurs** who can't afford enterprise marketing tools
+- 👩‍💻 **Developers** building marketing tools for clients
+- 🌍 **Anyone** who believes marketing automation should be free and open
 
 ---
 
-## ⚙️ Configuration
+## 🗺️ Roadmap
 
-### Email Provider
-
-CoachKit supports multiple email providers. Configure in your Supabase Edge Function secrets:
-
-```bash
-# Resend (recommended)
-supabase secrets set RESEND_API_KEY=re_xxx
-
-# Or SMTP
-supabase secrets set SMTP_HOST=smtp.example.com
-supabase secrets set SMTP_PORT=587
-supabase secrets set SMTP_USER=user@example.com
-supabase secrets set SMTP_PASS=your-password
-```
-
-### Payment Provider
-
-Currently supports Razorpay. Configure the webhook URL in your Razorpay dashboard:
-
-```
-https://your-project.supabase.co/functions/v1/razorpay-webhook
-```
-
-### UTM Tracking
-
-Add the tracking script to your landing pages:
-
-```html
-<script src="https://your-project.supabase.co/functions/v1/track-visitor"></script>
-```
+- [x] Email nurture sequences
+- [x] Payment recovery automation
+- [x] Razorpay webhook integration
+- [x] UTM attribution system
+- [x] Google Sheet bidirectional sync
+- [x] 9-page analytics dashboard
+- [x] Contact lifecycle management
+- [x] Campaign performance tracking
+- [ ] WhatsApp Cloud API integration
+- [ ] Stripe payment support
+- [ ] Multi-tenant mode (SaaS)
+- [ ] AI-powered email copywriting
+- [ ] Booking system (Cal.com alternative)
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
 
-### Development Workflow
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes
-4. Run linting: `npm run lint`
-5. Commit: `git commit -m 'feat: add amazing feature'`
-6. Push: `git push origin feature/amazing-feature`
-7. Open a Pull Request
-
-### Areas We Need Help
-
-- 🌍 **Internationalization** — Support for multiple languages/currencies
-- 📱 **Mobile App** — React Native companion app
-- 🔌 **Integrations** — Stripe, Mailchimp, ConvertKit connectors
-- 📖 **Documentation** — Tutorials, guides, and API docs
-- 🧪 **Tests** — Unit and integration test coverage
+```bash
+# Fork → Clone → Branch → Code → PR
+git checkout -b feature/your-feature
+git commit -m "Add: your feature"
+git push origin feature/your-feature
+```
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
+[MIT](LICENSE) — use it, modify it, ship it. Free forever.
 
 ---
 
-## 🙏 Acknowledgements
+## 💬 Story
 
-- [Supabase](https://supabase.com) — Backend infrastructure
-- [Anthropic Claude](https://claude.ai) — AI pair programming
-- [Lucide](https://lucide.dev) — Beautiful icons
-- [TailwindCSS](https://tailwindcss.com) — Utility-first CSS
-- [Recharts](https://recharts.org) — React charting library
+> "I'm a solo entrepreneur from India. I needed marketing automation for my coaching clients but couldn't afford HubSpot or ActiveCampaign. So I built CoachKit with Claude as my AI development partner. No team, no funding — just one person and an AI. Now I'm open-sourcing it so every coach and solopreneur can have enterprise-grade automation for free."
 
 ---
 
 <div align="center">
-
-**Made with ❤️ for the coaching community**
-
-[⬆ Back to top](#-coachkit--open-source-marketing-automation)
-
+  <p><strong>If CoachKit saves you money, give it a ⭐</strong></p>
+  <p>Made with ❤️ in India</p>
 </div>
-]]>
