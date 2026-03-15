@@ -4,10 +4,10 @@
   <p>Stop paying $500+/month for marketing tools. CoachKit gives you everything — for free.</p>
 
   <p>
-    <a href="https://github.com/krishna-build/coach-automation-kit/stargazers"><img src="https://img.shields.io/github/stars/krishna-build/coach-automation-kit?style=social" alt="Stars"></a>
-    <a href="https://github.com/krishna-build/coach-automation-kit/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
-    <a href="https://github.com/krishna-build/coach-automation-kit/issues"><img src="https://img.shields.io/github/issues/krishna-build/coach-automation-kit" alt="Issues"></a>
-    <img src="https://img.shields.io/badge/Built%20with-AI-blueviolet" alt="Built with AI">
+    <a href="https://github.com/krishna-build/claude-coach-kit/stargazers"><img src="https://img.shields.io/github/stars/krishna-build/claude-coach-kit?style=social" alt="Stars"></a>
+    <a href="https://github.com/krishna-build/claude-coach-kit/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+    <a href="https://github.com/krishna-build/claude-coach-kit/issues"><img src="https://img.shields.io/github/issues/krishna-build/claude-coach-kit" alt="Issues"></a>
+    <img src="https://img.shields.io/badge/Built%20with-Claude-blueviolet" alt="Built with Claude">
     <img src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white" alt="Supabase">
     <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React">
   </p>
@@ -138,7 +138,7 @@ Most coaches and solopreneurs pay **$200-500/month** for tools like HubSpot, Act
 
 ```bash
 # Clone the repository
-git clone https://github.com/krishna-build/coach-automation-kit.git
+git clone https://github.com/krishna-build/claude-coach-kit.git
 cd coachkit
 
 # Install dependencies
@@ -245,7 +245,7 @@ git push origin feature/your-feature
 
 ## 💬 Story
 
-> "I'm a solo entrepreneur from India. I needed marketing automation for my coaching clients but couldn't afford HubSpot or ActiveCampaign. So I built CoachKit with AI as my development partner. No team, no funding — just one person and an AI. Now I'm open-sourcing it so every coach and solopreneur can have enterprise-grade automation for free."
+> "I'm a solo entrepreneur from India. I needed marketing automation for my coaching clients but couldn't afford HubSpot or ActiveCampaign. So I built CoachKit with Claude as my AI development partner. No team, no funding — just one person and an AI. Now I'm open-sourcing it so every coach and solopreneur can have enterprise-grade automation for free."
 
 ---
 
