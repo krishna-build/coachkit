@@ -1,0 +1,11 @@
+{
+  "project": "claude-coach-kit",
+  "description": "Open-source marketing automation for coaches",
+  "tech_stack": ["react", "supabase", "tailwindcss", "vite"],
+  "conventions": {
+    "components": "functional with hooks",
+    "styling": "tailwindcss utility classes",
+    "state": "supabase real-time",
+    "testing": "manual + CI build check"
+  }
+}
