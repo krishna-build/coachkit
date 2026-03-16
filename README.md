@@ -224,6 +224,10 @@ coachkit/
 
 ---
 
+## 📚 Companion Project
+
+**[Marketing Prompts](https://github.com/krishna-build/marketing-prompts)** — 500+ curated marketing prompts, swipe files & hooks. The perfect companion to Claude Coach Kit.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
