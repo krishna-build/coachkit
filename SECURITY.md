@@ -5,7 +5,7 @@
 If you discover a security vulnerability, please report it responsibly:
 
 1. **Do NOT** create a public GitHub issue
-2. Email: krishna@helloagent.in
+2. Email: security@example.com
 3. Include steps to reproduce
 4. We'll respond within 48 hours
 

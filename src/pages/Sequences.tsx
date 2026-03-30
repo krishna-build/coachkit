@@ -147,7 +147,7 @@ function EditModal({ step, onClose, onSave }: { step: any; onClose: () => void; 
   const [headerConfig, setHeaderConfig] = useState<HeaderConfig>({
     headline: "Abundance Breakthrough: Journey with Your Coach",
     buttonText: "BOOK YOUR LIFE\nUPGRADE CALL",
-    buttonUrl: "https://pages.razorpay.com/pl_RfBIg3HtW8fVCn/view",
+    buttonUrl: "https://pages.razorpay.com/your-page-id/view",
   });
   return (
     <div className="fixed inset-0 z-50 bg-black/90 flex items-start justify-center p-4 overflow-auto">

@@ -10,7 +10,7 @@ const SMTP_USER = Deno.env.get("SMTP_USER") || "support@example.com";
 const SMTP_PASS = Deno.env.get("SMTP_PASS") || "";
 const TRACK_BASE = Deno.env.get("TRACK_BASE") || "https://YOUR_SUPABASE_REF.supabase.co/functions/v1";
 const IMG_URL = "https://YOUR_SUPABASE_REF.supabase.co/storage/v1/object/public/course-covers/automation/coach-Coach-profile.png";
-const RAZORPAY_URL = "https://pages.razorpay.com/pl_RfBIg3HtW8fVCn/view";
+const RAZORPAY_URL = Deno.env.get("RAZORPAY_PAYMENT_URL") || "https://pages.razorpay.com/your-page-id/view";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",

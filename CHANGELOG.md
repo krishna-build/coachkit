@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2026-03-21
+
+### Added
+- WhatsApp Business API integration for lead notifications
+- AI-powered email subject line suggestions
+- Multi-language email template support (Hindi, Spanish, Portuguese)
+- Funnel page builder with Cloudflare Pages deployment
+- Customer journey tracking with full attribution timeline
+- ROADMAP.md with long-term vision
+
+### Improved
+- Meta Ads API integration for automatic ad name resolution
+- UTM parameter handling for campaign ID → name mapping
+- Email deliverability with dedicated domain warmup guide
+- Dashboard performance with lazy-loaded analytics components
+
+### Fixed
+- Razorpay webhook JWT verification for external webhooks
+- Duplicate contact entries from multi-source imports
+- Timezone-aware date ranges for IST reporting
+
 ## [1.2.0] - 2026-03-10
 
 ### Added

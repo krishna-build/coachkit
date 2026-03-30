@@ -16,7 +16,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 const IMG_URL = "https://YOUR_SUPABASE_REF.supabase.co/storage/v1/object/public/course-covers/automation/coach-Coach-profile.png";
-const DEFAULT_RAZORPAY = "https://pages.razorpay.com/pl_RfBIg3HtW8fVCn/view";
+const DEFAULT_RAZORPAY = "https://pages.razorpay.com/your-page-id/view";
 
 export interface EmailBlock {
   id: string;
@@ -63,7 +63,7 @@ const FONT_SIZES = ["14px", "16px", "18px", "20px", "24px"];
 // ─── Unsubscribe Footer HTML ────────────────────────────────
 const UNSUBSCRIBE_FOOTER_HTML = `<div style="text-align:center;padding:20px;font-size:11px;color:#888;font-family:Arial,sans-serif;border-top:1px solid #eee;margin-top:30px">
   <p style="margin:0 0 6px">You're receiving this because you signed up at Your Coach's website.</p>
-  <p style="margin:0"><a href="https://ita-marketing-automation.netlify.app/unsubscribe?email={{email}}&token={{unsubscribe_token}}" style="color:#888;text-decoration:underline">Unsubscribe</a></p>
+  <p style="margin:0"><a href="https://your-domain.com/unsubscribe?email={{email}}&token={{unsubscribe_token}}" style="color:#888;text-decoration:underline">Unsubscribe</a></p>
 </div>`;
 
 function parseHtmlToBlocks(html: string): EmailBlock[] {

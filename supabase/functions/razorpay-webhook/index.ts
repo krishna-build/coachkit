@@ -336,7 +336,7 @@ serve(async (req) => {
             event_name: "Purchase",
             event_id: eventId,
             event_time: eventTime,
-            event_source_url: "https://pages.razorpay.com/pl_RfBIg3HtW8fVCn/view",
+            event_source_url: "https://pages.razorpay.com/your-page-id/view",
             action_source: "website",
             user_data: {
               em: [await sha256(email)],

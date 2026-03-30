@@ -175,7 +175,7 @@ export default function CampaignEditor() {
   const [headerConfig, setHeaderConfig] = useState<HeaderConfig>({
     headline: "Abundance Breakthrough: Journey with Your Coach",
     buttonText: "BOOK YOUR LIFE\nUPGRADE CALL",
-    buttonUrl: "https://pages.razorpay.com/pl_RfBIg3HtW8fVCn/view",
+    buttonUrl: "https://pages.razorpay.com/your-page-id/view",
   });
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [showTagDropdown, setShowTagDropdown] = useState(false);
